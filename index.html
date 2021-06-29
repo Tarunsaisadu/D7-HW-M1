@@ -1,0 +1,123 @@
+<html>
+  <header>
+    <script>
+      function mymoveFunction() {
+        document.getElementById("Change").innerHTML =
+          " you can find amazing books here:)!!";
+      }
+
+      function myFunction() {
+        document.body.style.backgroundColor = "#00FFFF";
+      }
+      function myFootFunction() {
+        document.getElementById("footchange").innerText = "Freiberg, 09599";
+      }
+      function linkFunction() {
+        document.getElementById("lf").color = "Tomato";
+      }
+      let color = new Array();
+      color[0] = "red";
+      color[1] = "blue";
+      color[2] = "orange";
+      color[3] = "purple";
+      function changeColor() {
+        let randomColor = Math.floor(Math.random() * color.length);
+        document.getElementById("cc").style.color = color[randomColor];
+      }
+    </script>
+  </header>
+  <body onclick="myFunction()">
+    <h1 onmouseover="mymoveFunction()" id="Change">booklings</h1>
+    <br />
+    <table>
+      <tr>
+        <th>image</th>
+        <th>Book name</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>link</th>
+      </tr>
+      <tr>
+        <td><img src="secret.jpg" alt="" /></td>
+        <td>The Secret</td>
+        <td>Rhonda berney</td>
+        <td id="cc">12 euro</td>
+        <td>
+          <a
+            id="lf"
+            href="https://www.amazon.de/-/en/Rhonda-Byrne/dp/1847370292/ref=sr_1_5?dchild=1&keywords=the+secret&qid=1624970034&sr=8-5&asin=1847370292&revisionId=&format=4&depth=1"
+          >
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td><img /></td>
+        <td>Harry potter</td>
+        <td>Jk Rowling</td>
+        <td id="cc">48.99 euro</td>
+        <td>
+          <a
+            id="lf"
+            href="https://www.amazon.de/-/en/J-K-Rowling-Harry-Potter-Box/dp/1408856778/ref=sr_1_5?crid=112S7KTLUKUVL&dchild=1&keywords=harry+potter&qid=1624970597&s=books&sprefix=harry%2Cstripbooks%2C196&sr=1-5"
+          >
+            Buy now
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td><img /></td>
+        <td>maze runner</td>
+        <td>James dashner</td>
+        <td id="cc">31.99 euro</td>
+        <td>
+          <a
+            id="lf"
+            href=" https://www.amazon.de/-/en/James-Dashner/dp/1524771031/ref=sr_1_5?dchild=1&keywords=maze+runner&qid=1624970768&s=books&sr=1-5"
+          >
+            Buy now
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td><img /></td>
+        <td>Rich dad poor dad</td>
+        <td>Robert T Kiyosaki</td>
+        <td id="cc">16.50 euro</td>
+        <td>
+          <a
+            id="lf"
+            href="https://www.amazon.de/-/en/Robert-T-Kiyosaki/dp/1612680194/ref=lp_4340033031_1_4?s=specialty-aps"
+          >
+            Buy now
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td><img /></td>
+        <td>atomic habits</td>
+        <td>James clear</td>
+        <td id="cc">13.89 euro</td>
+        <td>
+          <a
+            id="lf"
+            href="https://www.amazoan.de/-/en/James-Clear/dp/1847941834/ref=sr_1_3?dchild=1&qid=1624971001&s=books&sr=1-3"
+            >Buy now
+          </a>
+        </td>
+      </tr>
+    </table>
+    <button onclick="changeColor()">price color</button>
+    <button onclick="linkFunction()">click me</button>
+    <footer>
+      <p>owned by: Tarun sadu</p>
+      <br />
+      <address onclick="myFootFunction()" id="footchange">
+        Adress: Gotham street
+        <br />
+        09599.
+      </address>
+      <a href="mailto:tarusnai.rct@gamil.com"> Contact us </a> <br />
+      <textarea placeholder="Write us something"></textarea>
+    </footer>
+  </body>
+</html>
